@@ -69,43 +69,71 @@
 
         <section class="menu-sections">
             <article>
-                <h3>Entrantes</h3>
-                <p>Comienza con nuestras sugerencias ligeras y sabrosas.</p>
-                <ul>
-                    <li>Ensalada de la casa — mezcla de hojas, nueces y vinagreta</li>
-                    <li>Crema de calabaza — con un toque de jengibre</li>
-                    <li>Tabla de quesos — selección local</li>
-                </ul>
+                <button class="accordion" aria-expanded="false" aria-controls="panel-entrantes" id="accordion-entrantes">
+                    <span class="accordion-label">Entrantes</span>
+                    <span class="accordion-icon" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </button>
+                <div id="panel-entrantes" class="accordion-panel" hidden>
+                    <p>Comienza con nuestras sugerencias ligeras y sabrosas.</p>
+                    <ul>
+                        <li>Ensalada de la casa — mezcla de hojas, nueces y vinagreta</li>
+                        <li>Crema de calabaza — con un toque de jengibre</li>
+                        <li>Tabla de quesos — selección local</li>
+                    </ul>
+                </div>
             </article>
 
             <article>
-                <h3>Calientes</h3>
-                <p>Platos reconfortantes para entrar en calor.</p>
-                <ul>
-                    <li>Patatas bravas — salsa casera</li>
-                    <li>Croquetas caseras — jamón o setas</li>
-                    <li>Guiso de lentejas — con verduras y chorizo</li>
-                </ul>
+                <button class="accordion" aria-expanded="false" aria-controls="panel-calientes" id="accordion-calientes">
+                    <span class="accordion-label">Calientes</span>
+                    <span class="accordion-icon" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </button>
+                <div id="panel-calientes" class="accordion-panel" hidden>
+                    <p>Platos reconfortantes para entrar en calor.</p>
+                    <ul>
+                        <li>Patatas bravas — salsa casera</li>
+                        <li>Croquetas caseras — jamón o setas</li>
+                        <li>Guiso de lentejas — con verduras y chorizo</li>
+                    </ul>
+                </div>
             </article>
 
             <article>
-                <h3>Especialidades</h3>
-                <p>Nuestras recetas más aclamadas por los clientes.</p>
-                <ul>
-                    <li>Paella de la casa — mariscos y pollo</li>
-                    <li>Rabo de toro estofado — cocción lenta</li>
-                    <li>Merluza a la marinera — frescura del día</li>
-                </ul>
+                <button class="accordion" aria-expanded="false" aria-controls="panel-especialidades" id="accordion-especialidades">
+                    <span class="accordion-label">Especialidades</span>
+                    <span class="accordion-icon" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </button>
+                <div id="panel-especialidades" class="accordion-panel" hidden>
+                    <p>Nuestras recetas más aclamadas por los clientes.</p>
+                    <ul>
+                        <li>Paella de la casa — mariscos y pollo</li>
+                        <li>Rabo de toro estofado — cocción lenta</li>
+                        <li>Merluza a la marinera — frescura del día</li>
+                    </ul>
+                </div>
             </article>
 
             <article>
-                <h3>Carnes</h3>
-                <p>Carnes seleccionadas y cocciones perfectas.</p>
-                <ul>
-                    <li>Entrecot a la parrilla — servido con patatas</li>
-                    <li>Pollo al ajillo — receta de la abuela</li>
-                    <li>Chuletas de cerdo — reducción de vino tinto</li>
-                </ul>
+                <button class="accordion" aria-expanded="false" aria-controls="panel-carnes" id="accordion-carnes">
+                    <span class="accordion-label">Carnes</span>
+                    <span class="accordion-icon" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </button>
+                <div id="panel-carnes" class="accordion-panel" hidden>
+                    <p>Carnes seleccionadas y cocciones perfectas.</p>
+                    <ul>
+                        <li>Entrecot a la parrilla — servido con patatas</li>
+                        <li>Pollo al ajillo — receta de la abuela</li>
+                        <li>Chuletas de cerdo — reducción de vino tinto</li>
+                    </ul>
+                </div>
             </article>
         </section>
     </main>
@@ -140,35 +168,6 @@
         </div>
     </footer>
 
-    <script>
-        // Toggle del menú en pantallas pequeñas
-        document.addEventListener('DOMContentLoaded', function () {
-            var btn = document.querySelector('.menu-toggle');
-            var list = document.querySelector('.menu-list');
-            btn.addEventListener('click', function () {
-                var expanded = this.getAttribute('aria-expanded') === 'true';
-                this.setAttribute('aria-expanded', !expanded);
-                list.classList.toggle('open');
-                if(list.classList.contains('open')){
-                    // focus al primer elemento del menú para accesibilidad
-                    var first = list.querySelector('li');
-                    if(first) first.focus && first.setAttribute('tabindex','-1') && first.focus();
-                }
-            });
-
-            // cerrar con ESC
-            document.addEventListener('keydown', function(e){
-                if(e.key === 'Escape' || e.key === 'Esc'){
-                    if(list.classList.contains('open')){
-                        list.classList.remove('open');
-                        btn.setAttribute('aria-expanded','false');
-                        btn.focus();
-                    }
-                }
-            });
-
-            document.getElementById('year').textContent = new Date().getFullYear();
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
