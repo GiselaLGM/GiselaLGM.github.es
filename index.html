@@ -1,11 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La Abuela Pepa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="site-header">
+        <div class="brand">
+            <div class="brand-inner">
+                <div class="brand-image">
+                    <img src="images/abuela.jpg" alt="La Abuela Pepa - imagen" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/abuela-pepa.svg'" />
+                </div>
+                <div class="brand-text">
+                    <h1>La Abuela Pepa</h1>
+                    <p class="tag">Cocina tradicional con cariño</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <button class="menu-toggle" aria-expanded="false">Menú ▾</button>
+            <ul class="menu-list">
+                <li class="menu-section">
+                    <h3>Entrantes</h3>
+                    <ul>
+                        <li>Ensalada de la casa</li>
+                        <li>Crema de calabaza</li>
+                        <li>Tabla de quesos artesanos</li>
+                    </ul>
+                </li>
+                <li class="menu-section">
+                    <h3>Calientes</h3>
+                    <ul>
+                        <li>Patatas bravas</li>
+                        <li>Croquetas caseras</li>
+                        <li>Guiso de lentejas</li>
+                    </ul>
+                </li>
+                <li class="menu-section">
+                    <h3>Especialidades</h3>
+                    <ul>
+                        <li>Paella de la casa</li>
+                        <li>Rabo de toro estofado</li>
+                        <li>Merluza a la marinera</li>
+                    </ul>
+                </li>
+                <li class="menu-section">
+                    <h3>Carnes</h3>
+                    <ul>
+                        <li>Entrecot a la parrilla</li>
+                        <li>Pollo al ajillo</li>
+                        <li>Chuletas de cerdo con reducción</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- hero-image removed; image now next to title -->
+    </header>
+
+    <main class="content">
+        <section class="intro">
+            <h2>Bienvenidos a La Abuela Pepa</h2>
+            <p>Sabores caseros inspirados en recetas familiares. Disfruta de platos preparados con ingredientes de temporada y técnicas tradicionales.</p>
+        </section>
+
+        <section class="menu-sections">
+            <article>
+                <h3>Entrantes</h3>
+                <p>Comienza con nuestras sugerencias ligeras y sabrosas.</p>
+                <ul>
+                    <li>Ensalada de la casa — mezcla de hojas, nueces y vinagreta</li>
+                    <li>Crema de calabaza — con un toque de jengibre</li>
+                    <li>Tabla de quesos — selección local</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Calientes</h3>
+                <p>Platos reconfortantes para entrar en calor.</p>
+                <ul>
+                    <li>Patatas bravas — salsa casera</li>
+                    <li>Croquetas caseras — jamón o setas</li>
+                    <li>Guiso de lentejas — con verduras y chorizo</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Especialidades</h3>
+                <p>Nuestras recetas más aclamadas por los clientes.</p>
+                <ul>
+                    <li>Paella de la casa — mariscos y pollo</li>
+                    <li>Rabo de toro estofado — cocción lenta</li>
+                    <li>Merluza a la marinera — frescura del día</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Carnes</h3>
+                <p>Carnes seleccionadas y cocciones perfectas.</p>
+                <ul>
+                    <li>Entrecot a la parrilla — servido con patatas</li>
+                    <li>Pollo al ajillo — receta de la abuela</li>
+                    <li>Chuletas de cerdo — reducción de vino tinto</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <p>&copy; <span id="year"></span> La Abuela Pepa — Todos los derechos reservados</p>
+            </div>
+            <div class="footer-right">
+                <div class="socials">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <!-- Facebook SVG -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.07C22 6.48 17.52 2 11.93 2 6.34 2 1.86 6.48 1.86 12.07c0 4.99 3.66 9.13 8.44 9.92v-7.02H8.3v-2.9h3.99V9.09c0-3.95 2.36-6.12 5.98-6.12 1.73 0 3.55.31 3.55.31v3.9h-1.99c-1.97 0-2.58 1.22-2.58 2.47v2.02h4.39l-.7 2.9h-3.69v7.02c4.78-.79 8.44-4.93 8.44-9.92z" fill="#3b2f2f"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <!-- Instagram SVG -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.1A4.9 4.9 0 1016.9 13 4.9 4.9 0 0012 8.1zM18.4 6.6a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1z" fill="#3b2f2f"/></svg>
+                    </a>
+                    <a href="https://wa.me/34600111222" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <!-- WhatsApp SVG -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.86 11.86 0 0012 .07C5.73.07.86 5.2.86 11.5c0 2.03.53 4 1.52 5.75L.07 23l5.02-1.32A11.66 11.66 0 0012 23.93h.02c6.27 0 11.15-5.13 11.15-11.43 0-3.06-1.2-5.92-3.65-8.02zM12 21.3c-1.45 0-2.86-.39-4.09-1.12l-.29-.17-2.98.78.8-2.89-.19-.3A8.38 8.38 0 013.6 11.5C3.6 7.01 7 3.6 11.5 3.6S19.4 7 19.4 11.5 15.99 21.3 12 21.3z" fill="#3b2f2f"/></svg>
+                    </a>
+                </div>
+                <div class="location">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Armilla,+Granada" target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5A2.5 2.5 0 1114.5 9 2.5 2.5 0 0112 11.5z" fill="#3b2f2f"/></svg>
+                        <span>Armilla, Granada</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle del menú en pantallas pequeñas
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.querySelector('.menu-toggle');
+            var list = document.querySelector('.menu-list');
+            btn.addEventListener('click', function () {
+                var expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !expanded);
+                list.classList.toggle('open');
+                if(list.classList.contains('open')){
+                    // focus al primer elemento del menú para accesibilidad
+                    var first = list.querySelector('li');
+                    if(first) first.focus && first.setAttribute('tabindex','-1') && first.focus();
+                }
+            });
+
+            // cerrar con ESC
+            document.addEventListener('keydown', function(e){
+                if(e.key === 'Escape' || e.key === 'Esc'){
+                    if(list.classList.contains('open')){
+                        list.classList.remove('open');
+                        btn.setAttribute('aria-expanded','false');
+                        btn.focus();
+                    }
+                }
+            });
+
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
 </body>
 </html>
