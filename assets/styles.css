@@ -1,0 +1,76 @@
+/* Estilos en tonos marrones cálidos para La Abuela Pepa */
+:root{
+    --bg: #FBF7F3;
+    --primary: #4B2E2A;
+    --secondary: #A67857;
+    --accent: #DCC7AE;
+    --muted: #7E6A61;
+    --white: #ffffff;
+    --transition: 0.28s ease;
+}
+*{box-sizing:border-box}
+body{
+    font-family: 'Poppins', sans-serif;
+    background:var(--bg);
+    color:var(--primary);
+    margin:0;
+}
+.site-header{
+    background:var(--white);
+    box-shadow:0 6px 20px rgba(75,46,42,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+.header-inner{
+    max-width:1100px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px;
+    gap:16px;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-img{width:64px;height:64px;border-radius:8px;object-fit:cover}
+.brand-text h1{font-family:'Playfair Display',serif;margin:0;font-size:1.4rem}
+.tag{color:var(--secondary);font-size:0.9rem;margin-top:2px}
+.nav{position:relative}
+.menu-toggle{background:transparent;border:1px solid var(--accent);padding:8px 12px;border-radius:8px;cursor:pointer;color:var(--primary)}
+.menu-panel{position:absolute;right:0;top:48px;width:320px;background:var(--white);border-radius:10px;padding:12px;box-shadow:0 10px 30px rgba(75,46,42,0.12)}
+.menu-categories{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.menu-categories li{display:block}
+.accordion{width:100%;display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:8px;border:none;background:transparent;cursor:pointer;font-weight:600;color:var(--primary)}
+.accordion:focus{outline:2px solid rgba(166,120,87,0.2)}
+.accordion-panel{padding:10px 12px;border-radius:6px;background:linear-gradient(180deg, var(--accent), #f5e7d7);margin-top:6px}
+.accordion-panel ul{list-style:none;margin:0;padding:0}
+.accordion-panel li{padding:6px 0;border-bottom:1px dashed rgba(75,46,42,0.06);color:var(--muted)}
+.chev{font-size:0.9rem;opacity:0.9}
+.hero{background:linear-gradient(90deg, rgba(74,38,33,0.06), rgba(220,199,174,0.06));padding:56px 16px;border-radius:12px;margin:28px auto;max-width:1100px}
+.hero-inner{max-width:900px;margin:0 auto;text-align:center}
+.hero h2{font-family:'Playfair Display',serif;font-size:2rem;color:var(--primary);margin-bottom:10px}
+.hero p{color:var(--muted);margin-bottom:20px}
+.btn{display:inline-block;padding:10px 18px;background:transparent;border:1px solid var(--secondary);border-radius:8px;color:var(--primary);text-decoration:none}
+.btn.primary{background:var(--secondary);color:var(--white);border:none}
+.main .content{max-width:1100px;margin:18px auto;display:grid;grid-template-columns:1fr 360px;gap:24px;padding:0 16px}
+.about{background:var(--white);padding:20px;border-radius:12px;box-shadow:0 10px 30px rgba(75,46,42,0.06)}
+.reserva{background:linear-gradient(180deg,var(--accent),#f8efe0);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(75,46,42,0.06)}
+.reserva h3{margin-top:0}
+.reserva label{display:block;font-size:0.9rem;margin-top:10px}
+.reserva input,.reserva textarea{width:100%;padding:8px;border:1px solid rgba(75,46,42,0.08);border-radius:8px;margin-top:6px}
+.form-msg{margin-top:12px;color:var(--primary);font-weight:600}
+.site-footer{background:var(--primary);color:var(--white);padding:20px 16px;margin-top:36px}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.footer-left p{margin:0}
+.socials a{color:var(--white);text-decoration:none;margin-left:10px}
+.address{opacity:0.9}
+@media(max-width:900px){
+    .main .content{grid-template-columns:1fr;}
+    .menu-panel{right:8px;left:8px;width:auto}
+    .hero h2{font-size:1.6rem}
+    .header-inner{padding:12px}
+}
+@media(max-width:480px){
+    .brand-img{width:48px;height:48px}
+    .brand-text h1{font-size:1.1rem}
+}
