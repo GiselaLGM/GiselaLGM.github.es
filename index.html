@@ -3,144 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Abuela Pepa — Cocina Tradicional</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>El Cachopo De Oro - Cachopos Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="brand">
-                <img src="images/abuela.jpg" alt="La Abuela Pepa" class="brand-img" onerror="this.onerror=null;this.src='images/abuela-pepa.svg'">
-                <div class="brand-text">
-                    <h1>La Abuela Pepa</h1>
-                    <p class="tag">Cocina tradicional española</p>
-                </div>
-            </div>
 
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">El Cachopo De Oro</a>
             <nav class="nav">
-                <button id="menu-toggle" class="menu-toggle" aria-expanded="false">Menú ▾</button>
-                <div id="menu-panel" class="menu-panel" hidden>
-                    <ul class="menu-categories">
-                        <li>
-                            <button class="accordion" aria-expanded="false" aria-controls="panel-entrantes">Entrantes <span class="chev">▾</span></button>
-                            <div id="panel-entrantes" class="accordion-panel" hidden>
-                                <ul>
-                                    <li>Ensalada de la casa</li>
-                                    <li>Crema de calabaza</li>
-                                    <li>Tabla de quesos</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="accordion" aria-expanded="false" aria-controls="panel-calientes">Calientes <span class="chev">▾</span></button>
-                            <div id="panel-calientes" class="accordion-panel" hidden>
-                                <ul>
-                                    <li>Patatas bravas</li>
-                                    <li>Croquetas caseras</li>
-                                    <li>Guiso de lentejas</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="accordion" aria-expanded="false" aria-controls="panel-especialidades">Especialidades <span class="chev">▾</span></button>
-                            <div id="panel-especialidades" class="accordion-panel" hidden>
-                                <ul>
-                                    <li>Paella de la casa</li>
-                                    <li>Rabo de toro estofado</li>
-                                    <li>Merluza a la marinera</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="accordion" aria-expanded="false" aria-controls="panel-carnes">Carnes <span class="chev">▾</span></button>
-                            <div id="panel-carnes" class="accordion-panel" hidden>
-                                <ul>
-                                    <li>Entrecot a la parrilla</li>
-                                    <li>Pollo al ajillo</li>
-                                    <li>Chuletas de cerdo</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="nav-list">
+                    <li><a href="#menu">Nuestra Carta</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Reservar Mesa</a></li>
+                </ul>
             </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
-    <main class="main">
-        <section class="hero">
-            <div class="hero-inner">
-                <h2>Sabores de siempre, hechos con cariño</h2>
-                <p>Platos tradicionales de la cocina española, preparados con ingredientes locales y recetas familiares.</p>
-                <a href="#reserva" class="btn">Reservar una mesa</a>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>El Cachopo De Oro</h1>
+                <p>La experiencia definitiva en cachopos premium. Tradición y vanguardia en cada bocado.</p>
+                <a href="#menu" class="btn btn-secondary">Descubre la Carta</a>
             </div>
         </section>
 
-        <section class="content">
-            <article class="about">
-                <h3>Nuestra historia</h3>
-                <p>La Abuela Pepa nace del amor por la cocina casera. Cada plato respeta la tradición y el sabor de siempre.</p>
-            </article>
+        <section id="menu" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Nuestra Carta Premium</h2>
+                <div class="menu-grid">
+                    <div class="menu-item reveal">
+                        <img src="https://via.placeholder.com/600x400/FFD700/000000?text=Cachopo+Clásico" alt="Cachopo Clásico">
+                        <h3>Cachopo Clásico</h3>
+                        <p>Filetes de ternera asturiana, jamón ibérico y queso de cabra. Un clásico reinventado.</p>
+                        <span class="price">22€</span>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="https://via.placeholder.com/600x400/D2B48C/000000?text=Cachopo+De+Mar" alt="Cachopo de Mar">
+                        <h3>Cachopo de Mar</h3>
+                        <p>Merluza fresca, gambas y salsa marinera. Una explosión de sabor atlántico.</p>
+                        <span class="price">25€</span>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="https://via.placeholder.com/600x400/CD853F/000000?text=Cachopo+Vegano" alt="Cachopo Vegano">
+                        <h3>Cachopo Vegano</h3>
+                        <p>Seitán marinado, champiñones y queso vegano ahumado. Sabor y sostenibilidad.</p>
+                        <span class="price">20€</span>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="https://via.placeholder.com/600x400/B8860B/000000?text=Cachopo+Gourmet" alt="Cachopo Gourmet">
+                        <h3>Cachopo Gourmet</h3>
+                        <p>Solomillo de buey, foie gras y trufa negra. Una delicia para los paladares más exigentes.</p>
+                        <span class="price">30€</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <aside class="reserva" id="reserva">
-                <h3>Reserva tu mesa</h3>
-                <form id="reservation-form" novalidate>
-                    <label for="name">Nombre completo</label>
-                    <input type="text" id="name" name="name" required>
+        <section id="gallery" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Nuestra Galería Visual</h2>
+                <p class="section-subtitle">Déjate seducir por la belleza de nuestros cachopos.</p>
+                <div class="gallery-grid">
+                    <figure class="gallery-item reveal">
+                        <img src="https://via.placeholder.com/800x600/FFD700/000000?text=Cachopo+Perfecto+1" alt="Cachopo Perfecto 1">
+                        <figcaption>Cachopo Clásico, crujiente y dorado.</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal">
+                        <img src="https://via.placeholder.com/800x600/D2B48C/000000?text=Cachopo+Perfecto+2" alt="Cachopo Perfecto 2">
+                        <figcaption>El corte perfecto, revelando el interior.</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal">
+                        <img src="https://via.placeholder.com/800x600/CD853F/000000?text=Cachopo+Perfecto+3" alt="Cachopo Perfecto 3">
+                        <figcaption>Acompañamientos frescos y patatas caseras.</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal">
+                        <img src="https://via.placeholder.com/800x600/B8860B/000000?text=Cachopo+Perfecto+4" alt="Cachopo Perfecto 4">
+                        <figcaption>Presentación impecable, digna de un rey.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" id="phone" name="phone" required>
+        <section id="about" class="section-padding">
+            <div class="container about-layout">
+                <div class="about-text reveal">
+                    <h2 class="section-title">Sobre El Cachopo De Oro</h2>
+                    <p>En "El Cachopo De Oro", elevamos la tradición asturiana a una experiencia gastronómica sin igual. Seleccionamos los ingredientes más exquisitos: ternera de pasto, jamón ibérico de bellota, quesos artesanos y productos frescos de temporada.</p>
+                    <p>Cada cachopo es una obra de arte culinaria, preparado con pasión y dedicación por nuestros chefs. Nuestro compromiso es ofrecerte un sabor auténtico y una calidad inigualable en un ambiente elegante y acogedor.</p>
+                </div>
+                <div class="about-image reveal">
+                    <img src="https://via.placeholder.com/700x500/F5DEB3/000000?text=Nuestro+Restaurante" alt="Interior del Restaurante">
+                </div>
+            </div>
+        </section>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="date">Fecha</label>
-                    <input type="date" id="date" name="date" required>
-
-                    <label for="time">Hora</label>
-                    <input type="time" id="time" name="time" required>
-
-                    <label for="guests">Comensales</label>
-                    <input type="number" id="guests" name="guests" min="1" max="20" value="2" required>
-
-                    <label for="notes">Notas / Peticiones</label>
-                    <textarea id="notes" name="notes" rows="3"></textarea>
-
-                    <button type="submit" class="btn primary">Enviar reserva</button>
-                    <p id="form-msg" class="form-msg" role="status" aria-live="polite"></p>
-                </form>
-            </aside>
+        <section id="contact" class="section-padding bg-dark text-center">
+            <div class="container">
+                <h2 class="section-title light-text">Reserva Tu Experiencia Gourmet</h2>
+                <p class="section-subtitle light-text">Un lugar donde el sabor se encuentra con la excelencia.</p>
+                <a href="mailto:reservas@elcachopodeoro.com" class="btn btn-primary large-btn">Contacta para Reservar</a>
+                <div class="contact-info light-text">
+                    <p>C/ Falsa, 123, Ciudad, País</p>
+                    <p>Teléfono: +34 987 654 321</p>
+                    <p>Horario: Martes - Domingo, 13:30 - 16:00 & 20:30 - 23:30</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <p>&copy; <span id="year"></span> La Abuela Pepa</p>
-                <p class="address">C/ Real, 12 — Armilla, Granada</p>
-            </div>
-            <div class="footer-right">
-                <div class="socials">
-                    <a href="#" aria-label="Facebook" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2 6.34 2 1.86 6.48 1.86 12.07c0 4.99 3.66 9.13 8.44 9.92v-7.02H8.3v-2.9h3.99V9.09c0-3.95 2.36-6.12 5.98-6.12 1.73 0 3.55.31 3.55.31v3.9h-1.99c-1.97 0-2.58 1.22-2.58 2.47v2.02h4.39l-.7 2.9h-3.69v7.02c4.78-.79 8.44-4.93 8.44-9.92z"/></svg>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                    <a href="#" aria-label="Instagram" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.1A4.9 4.9 0 1016.9 13 4.9 4.9 0 0012 8.1zM18.4 6.6a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1z"/></svg>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                    <a href="#" aria-label="WhatsApp" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0012 .07C5.73.07.86 5.2.86 11.5c0 2.03.53 4 1.52 5.75L.07 23l5.02-1.32A11.66 11.66 0 0012 23.93h.02c6.27 0 11.15-5.13 11.15-11.43 0-3.06-1.2-5.92-3.65-8.02zM12 21.3c-1.45 0-2.86-.39-4.09-1.12l-.29-.17-2.98.78.8-2.89-.19-.3A8.38 8.38 0 013.6 11.5C3.6 7.01 7 3.6 11.5 3.6S19.4 7 19.4 11.5 15.99 21.3 12 21.3z"/></svg>
-                        <span class="sr-only">WhatsApp</span>
-                    </a>
-                </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 El Cachopo De Oro. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/A0A0A0/instagram-new.png" alt="Instagram"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/A0A0A0/facebook-new.png" alt="Facebook"></a>
             </div>
         </div>
     </footer>
 
-    <script src="assets/script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
